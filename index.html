@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form id="login">
+        <h2>Login</h2>
+        <div class="div--name">
+          <input type="text" placeholder="Name" id="text-login" />
+          <div class="message-login">Username ?</div>
+        </div>
+        <div class="div-pass">
+          <input type="password" placeholder="Password" id="pass-login" />
+          <i class="fa-solid fa-eye-slash fa-login"></i>
+          <div class="message-pass">Password ?</div>
+        </div>
+        <div class="btn">
+          <button class="register">Resgister</button>
+          <button class="login">Submit</button>
+        </div>
+      </form>
+      <form id="register">
+        <h2>Register</h2>
+        <div class="div--name">
+          <input type="text" placeholder="Name" id="text-register" />
+          <div class="message-register">
+            from 6-32<br />
+            letters
+          </div>
+        </div>
+        <div class="div-pass">
+          <input type="password" placeholder="Password" id="pass-register" />
+          <i class="fa-solid fa-eye-slash fa-res"></i>
+          <div class="message-pass-register">
+            from 6-50 letters, does not contain <br />
+            empty characters1
+          </div>
+        </div>
+        <div class="btn">
+          <button class="login-form">Login</button>
+
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

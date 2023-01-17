@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  background-image: url(/F8_Exercises/eventForm/background.png);
+  background-size: cover;
+  font-family: "Press Start 2P", cursive;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+#login {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px #e7ed9b;
+}
+#register {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ccc;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px #e7ed9b;
+}
+input {
+  margin: 20px auto;
+  border: none;
+  outline: none;
+  background: none;
+  border: 2px solid #6a5495;
+  box-shadow: 0 0 5px #6a5495;
+  height: 20px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+input::placeholder {
+  color: #fff;
+}
+.div-pass {
+  position: relative;
+}
+.div-pass i {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  font-size: 10px;
+  right: 2%;
+  color: #fff;
+}
+.register,
+.login,
+.submit,
+.login-form {
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  box-sizing: border-box;
+  border-left: 2px solid #6a5495;
+  border-right: 2px solid #6a5495;
+  transition: all 0.5s;
+  position: relative;
+}
+.register::before,
+.login::before,
+.submit::before,
+.login-form::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 2px;
+  background: #6a5495;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+.register::after,
+.login::after,
+.submit::after,
+.login-form::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 2px;
+  background: #6a5495;
+  bottom: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+.register:hover::before,
+.login:hover::before,
+.submit:hover::before,
+.login-form:hover::before {
+  width: 100%;
+}
+.register:hover::after,
+.login:hover::after,
+.submit:hover::after,
+.login-form:hover::after {
+  width: 100%;
+}
+button:hover {
+  box-shadow: 0 0 15px #8bdb81;
+}
+.div--name {
+  position: relative;
+}
+.message-login {
+  position: absolute;
+  color: white;
+  top: -30%;
+  left: -115%;
+  z-index: 100;
+  padding: 20px;
+  font-size: 90%;
+  background-color: black;
+  display: none;
+}
+.message-login::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+  width: 20%;
+  height: 50%;
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+}
+.message-pass {
+  position: absolute;
+  color: white;
+  top: -30%;
+  left: -115%;
+  z-index: 100;
+  padding: 20px;
+  font-size: 90%;
+  background-color: black;
+  display: none;
+}
+.message-pass::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+  width: 20%;
+  height: 50%;
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+}
+/* register */
+.message-register {
+  position: absolute;
+  color: white;
+  top: -50%;
+  left: -100%;
+  z-index: 100;
+  padding: 20px;
+  font-size: 90%;
+  background-color: black;
+  display: none;
+}
+.message-register::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+  width: 20%;
+  height: 50%;
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+}
+.message-pass-register {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: -170%;
+  z-index: 100;
+  padding: 20px;
+  font-size: 50%;
+  background-color: black;
+  display: none;
+}
+.message-pass-register::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  right: -10%;
+  top: 0;
+  width: 20%;
+  height: 50%;
+  z-index: -11;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+input[type="text"],
+input[type="password"] {
+  padding: 0 20px 0 5px;
+}
